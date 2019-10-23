@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="xf_statusbar_view" type="id"/>
+    <item name="xf_translucent_view" type="id"/>
+    <!--psts-->
+    <item name="xf_tab_tag_position" type="id"/>
+    <item name="xf_tab_txt_id" type="id"/>
+</resources>

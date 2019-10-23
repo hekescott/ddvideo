@@ -1,0 +1,1 @@
+package com.android.baselibrary.base;/** * Created by chen.huarong on 2019-05-12. */public interface DefaultView<T> extends BaseView {    void refresh(T t);}

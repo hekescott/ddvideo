@@ -1,0 +1,1 @@
+package com.android.baselibrary.service.bean;/** * Created by chen.huarong on 2019-05-12. */public class DefaultBean<T> extends BaseBean {    private T data;    public T getData() {        return data;    }    public void setData(T data) {        this.data = data;    }}

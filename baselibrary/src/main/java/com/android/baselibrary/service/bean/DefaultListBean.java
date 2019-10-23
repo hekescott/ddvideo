@@ -1,0 +1,1 @@
+package com.android.baselibrary.service.bean;import java.util.List;/** * Created by chen.huarong on 2019-05-12. */public class DefaultListBean<T> extends BaseBean {    private List<T> data;    public List<T> getData() {        return data;    }    public void setData(List<T> data) {        this.data = data;    }}

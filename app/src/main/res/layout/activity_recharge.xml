@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+    
+    <com.android.baselibrary.widget.MClearEditText
+        android:id="@+id/recharge_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/recharge_borders"
+        android:drawablePadding="6dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="请输入贵宾激活码"
+        android:textColor="#323232"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/rechare_commit"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@mipmap/login_bg"
+        android:layout_marginTop="20dp"
+        android:layout_width="250dp"
+        android:layout_height="45dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textSize="@dimen/txt_16"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+    
+</LinearLayout>

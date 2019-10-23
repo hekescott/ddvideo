@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageview_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tag"
+        android:visibility="gone"
+        android:background="@mipmap/top_title_bg"/>
+    <CheckedTextView
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/dp_10"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/text_black_color"
+        android:textSize="@dimen/txt_18"
+        tools:checked="true"
+        tools:text="全部"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baby.app.widget.layout.StarDetailTopLayout
+                android:id="@+id/star_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.baby.app.widget.layout.StarDetailMindLayout
+                android:id="@+id/star_mind_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <com.baby.app.widget.layout.StarDetailAboutLayout
+                android:id="@+id/star_about_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

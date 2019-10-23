@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tagLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:scrollbars="none"
+            tools:itemCount="8"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_tag_left_layout"
+            tools:spanCount="4"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/classifyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:scrollbars="none"
+            tools:itemCount="17"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/item_tag_right_layout"
+            tools:spanCount="3"/>
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@mipmap/login_bg"
+            android:textSize="@dimen/txt_18"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="确认"/>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:id="@+id/c_t_bottom_view"-->
+        <!--android:background="@color/white"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="140dp">-->
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--android:background="@color/transparent"-->
+        <!--android:id="@+id/c_t_bottom_recycle_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:scrollbars="none" />-->
+
+        <!--</RelativeLayout>-->
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+

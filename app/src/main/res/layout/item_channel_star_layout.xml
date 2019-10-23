@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        style="@style/ItemlineStyle"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:id="@+id/starLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view_num_text_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@mipmap/movie_bar_bg">
+
+            <TextView
+                android:id="@+id/view_num_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="5dp"
+                android:text="51部电影"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_14"/>
+
+        </RelativeLayout>
+
+        <!--头像-->
+        <RelativeLayout
+            android:id="@+id/head_back_view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/transparent">
+
+            <com.android.baselibrary.widget.RoundImageView
+                android:id="@+id/user_img_view"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                app:corner_radius="5dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/user_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/head_back_view"
+            android:text="姓名"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/txt_16"/>
+
+        <TextView
+            android:id="@+id/user_info_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name_text_view"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="95dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toEndOf="@+id/head_back_view"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text=""
+            android:textColor="@color/gray_color"
+            android:textSize="@dimen/txt_13"
+            tools:text="简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介"/>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/c_star_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/starLayout"/>
+
+</LinearLayout>

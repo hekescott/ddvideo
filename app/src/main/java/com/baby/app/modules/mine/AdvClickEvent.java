@@ -1,0 +1,1 @@
+package com.baby.app.modules.mine;import com.android.baselibrary.service.bean.home.HomeBannerBean;/** * Created by chen.huarong on 2019-05-24. */public class AdvClickEvent {    public static final String TAG = "AdvClickEvent";    public HomeBannerBean homeBannerBean;}

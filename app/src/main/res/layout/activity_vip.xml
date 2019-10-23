@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:background="@color/black_color">
+
+        <TextView
+            android:id="@+id/vip_top_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="3dp"
+            android:textSize="@dimen/txt_16"/>
+
+        <TextView
+            android:id="@+id/vip_top_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vip_top_text1"
+            android:layout_marginLeft="16dp"
+            android:textSize="@dimen/txt_13"/>
+
+        <RelativeLayout
+            android:id="@+id/dimand_btn"
+            android:layout_width="78dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/orange_cornors">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="领取钻石"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_14"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vip_top_view"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_dark_theme_color"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/vip_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/vip_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_14"/>
+
+        <RelativeLayout
+            android:id="@+id/vip_btn"
+            android:layout_width="85dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9dp"
+            android:background="@drawable/er_right_corner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="填写充值码"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/txt_13"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vip_top_view2"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#669900"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/vip_btn2"
+            android:layout_width="178dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/er_right_corner">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="填写充值码"
+                android:textColor="@color/black_color"
+                android:textSize="@dimen/txt_13"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vip_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
+
+</LinearLayout>

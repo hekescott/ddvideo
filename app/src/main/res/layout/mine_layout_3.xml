@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="-4dp"
+    android:layout_marginEnd="-4dp"
+    android:layout_marginBottom="12dp"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/white_corners_6"
+            android:orientation="vertical">
+
+            <!--历史记录-->
+            <RelativeLayout
+                android:id="@+id/my_history_btn"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/mine_h_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@mipmap/ic_my_history" />
+
+                <TextView
+                    android:id="@+id/mine_h_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toEndOf="@+id/mine_h_img"
+                    android:text="历史记录"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_14" />
+
+                <TextView
+                    android:id="@+id/m_h_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mine_h_text"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/mine_h_img"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/txt_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/ic_arrow_right_brown" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/h_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/transparent"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/bg_gray" />
+        <!--我的缓存-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/white_corners_6"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/my_cache_view"
+                android:layout_width="match_parent"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:id="@+id/mine_c_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_my_download" />
+
+                <TextView
+                    android:id="@+id/mine_c_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toEndOf="@+id/mine_c_img"
+                    android:text="我的缓存"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_14" />
+
+                <TextView
+                    android:id="@+id/m_c_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mine_c_text"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/mine_c_img"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/txt_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/ic_arrow_right_brown" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/c_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/bg_gray" />
+        <!--我的喜欢-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/white_corners_6"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/my_like_btn"
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <ImageView
+                    android:id="@+id/mine_x_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_my_favor" />
+
+                <TextView
+                    android:id="@+id/mine_x_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toEndOf="@+id/mine_x_img"
+                    android:text="我的喜欢"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/txt_14" />
+
+                <TextView
+                    android:id="@+id/m_l_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mine_x_text"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/mine_x_img"
+                    android:textColor="@color/gray_color"
+                    android:textSize="@dimen/txt_14" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@mipmap/ic_arrow_right_brown" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/x_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:background="@color/transparent"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

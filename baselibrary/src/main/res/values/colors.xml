@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><resources>    <!--覆盖颜色-->    <color name="xf_bgColor_overlay">#60000000</color>    <!--apsts-->    <color name="xf_tab_background_pressed">#6633B5E5</color>    <color name="xf_tab_red">#E43F3E</color></resources>
