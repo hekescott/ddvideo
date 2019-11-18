@@ -1,5 +1,7 @@
 package com.baby.app;
 
+import com.android.baselibrary.util.LogUtils;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -37,6 +39,7 @@ public class Time {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date d;
         try {
+//            LogUtils.d("nihao","34");
             d = sdf.parse(user_time);
             long l = d.getTime();
             String str = String.valueOf(l);
