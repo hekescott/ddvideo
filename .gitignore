@@ -3,6 +3,7 @@ local.properties
 gradlew.bat
 gradlew
 *.iml
+*.apk
 .idea/
 gradle/
 jiaozivideoplayer/build/
