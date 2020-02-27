@@ -45,6 +45,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="cf8fuq"/>
+            </intent-filter>
         </activity>
         <activity
             android:name=".modules.home.MainActivity"
@@ -172,7 +178,9 @@
                 <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
             </intent-filter>
         </receiver>
-
+        <meta-data
+            android:name="com.openinstall.APP_KEY"
+            android:value="cf8fuq" />
     </application>
 
 </manifest>

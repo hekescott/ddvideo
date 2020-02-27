@@ -11,6 +11,7 @@ import com.android.baselibrary.usermanger.UserStorage;
 import com.android.baselibrary.util.DisplayUtil;
 import com.downloader.PRDownloader;
 import com.downloader.PRDownloaderConfig;
+import com.fm.openinstall.OpenInstall;
 import com.orhanobut.logger.Logger;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.umeng.analytics.MobclickAgent;
@@ -18,6 +19,7 @@ import com.umeng.analytics.MobclickAgent;
 import org.simple.eventbus.EventBus;
 import org.xutils.DbManager;
 import org.xutils.x;
+import android.app.ActivityManager;
 
 /**
  * Created by gyq on 2016/7/5.
@@ -71,7 +73,19 @@ public class BaseApplication extends MultiDexApplication {
                     }
                 });
         db = x.getDb(daoConfig);
-
+        if (isMainProcess()) {
+            OpenInstall.init(this);
+        }
+    }
+    public boolean isMainProcess() {
+        int pid = android.os.Process.myPid();
+        ActivityManager activityManager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningAppProcessInfo appProcess : activityManager.getRunningAppProcesses()) {
+            if (appProcess.pid == pid) {
+                return getApplicationInfo().packageName.equals(appProcess.processName);
+            }
+        }
+        return false;
     }
 
     public void initAppconfig() {
